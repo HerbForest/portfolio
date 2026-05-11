@@ -1,0 +1,51 @@
+// ─── Brand colours ───────────────────────────────────────────────────────────
+$gold:        #D79706;
+$gold-light:  #f0b030;
+$cream:       #FFF3C6;
+$dark:        #093028;
+$dark-2:      #0d3f35;
+$dark-3:      #134f42;
+$text-muted:  #7ab89e;
+
+// ─── CSS custom properties (also available in JS via getComputedStyle) ────────
+:root {
+  --gold:        #{$gold};
+  --gold-light:  #{$gold-light};
+  --cream:       #{$cream};
+  --dark:        #{$dark};
+  --dark-2:      #{$dark-2};
+  --dark-3:      #{$dark-3};
+  --text-muted:  #{$text-muted};
+
+  --serif: 'DM Serif Display', Georgia, serif;
+  --mono:  'DM Mono', monospace;
+  --sans:  'Outfit', sans-serif;
+
+  --radius:    4px;
+  --radius-lg: 12px;
+}
+
+// ─── Mixins ───────────────────────────────────────────────────────────────────
+@mixin section-padding {
+  padding: 6rem 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@mixin mono-label {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+@mixin tag {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  background: rgba(215, 151, 6, 0.1);
+  color: var(--gold-light);
+  border: 1px solid rgba(215, 151, 6, 0.2);
+}
